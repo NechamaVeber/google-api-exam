@@ -1,0 +1,6 @@
+<div class="container">
+    <div class="header">Topics</div>
+    <ul class="list-unstyled">
+        <li *ngFor="let n of newsList" (click)="getNewContent(n.source.id)">{{n.title}}</li>
+    </ul>
+</div>
